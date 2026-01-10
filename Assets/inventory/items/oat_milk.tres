@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://d1px5mcfhl3tf"]
+
+[ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_dw0sh"]
+[ext_resource type="Texture2D" uid="uid://ctp8h7ikhh5vk" path="res://Assets/Sprites/oat_milk png.png" id="2_jmdfr"]
+
+[resource]
+script = ExtResource("1_dw0sh")
+name = "oat_milk"
+texture = ExtResource("2_jmdfr")
+metadata/_custom_type_script = "uid://dm2gjcygrbyo8"

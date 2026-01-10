@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctdq7t45yqyd4"]
+
+[ext_resource type="PackedScene" uid="uid://gl40wgl101uw" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
+
+[node name="Area1" instance=ExtResource("1_uidp5")]
+
+[node name="AreaExit" parent="." index="2"]
+position = Vector2(224, 5)
+
+[node name="GroceryItems" parent="Node2D" index="0"]
+position = Vector2(132, -25)
+
+[node name="GroceryItems2" parent="Node2D" index="1"]
+position = Vector2(72, -53)
+
+[node name="GroceryItems3" parent="Node2D" index="2"]
+position = Vector2(7, -22)

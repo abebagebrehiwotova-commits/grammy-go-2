@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq0ebt3n4nj3p"]
+
+[ext_resource type="Texture2D" uid="uid://4ujtdnf3vlhr" path="res://Assets/Sprites/Elevator png.png" id="1_1a2po"]
+[ext_resource type="Script" uid="uid://c2y0iq8t48elo" path="res://Assets/Scripts/area_exit.gd" id="1_pwf35"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pwf35"]
+size = Vector2(48, 56)
+
+[node name="AreaExit" type="Area2D" node_paths=PackedStringArray("sprite") groups=["area_exits"]]
+z_index = -10
+collision_layer = 65536
+script = ExtResource("1_pwf35")
+sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -27)
+scale = Vector2(0.12291257, 0.11779963)
+texture = ExtResource("1_1a2po")
+region_enabled = true
+region_rect = Rect2(675, 140.896, 492.733, 546.087)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -28)
+shape = SubResource("RectangleShape2D_pwf35")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
