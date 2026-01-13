@@ -685,8 +685,6 @@ position = Vector2(-58, -27)
 [node name="GroceryItems3" parent="Node2D" instance=ExtResource("4_dp7b8")]
 position = Vector2(-42, -27)
 
-[node name="Inv_UI" parent="." groups=["inventory"] instance=ExtResource("5_kfrer")]
-offset_left = -212.0
-offset_top = -95.0
-offset_right = -172.0
-offset_bottom = -55.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Inv_UI" parent="CanvasLayer" groups=["inventory"] instance=ExtResource("5_kfrer")]

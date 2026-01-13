@@ -15,9 +15,9 @@ script = ExtResource("1_7k17b")
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
 offset_left = -8.0
-offset_top = 8.0
-offset_right = 208.0
-offset_bottom = 64.0
+offset_top = -8.0
+offset_right = 485.7143
+offset_bottom = 120.0
 texture = ExtResource("2_jr2jk")
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]

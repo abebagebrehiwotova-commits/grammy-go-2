@@ -1,11 +1,21 @@
 extends Control
 
+#variable for players inventory
+@onready var inv:Inv=preload("res://Assets/inventory/playerInv.tres")
+@onready var slots:Array=$NinePatchRect/GridContainer.get_children()
+
+
 #variable to check if inventory is open or closed
 var is_open = false
 
 #function to make sure  inventory is closed at the beginning of the game
 func _ready():
 	close()
+	update_slots()
+	
+func update_slots():
+	for i in range(min(inv.items.size(),slots.size())):
+		slots[i].update(inv.items[i])
 
 #process funcion for input
 #afterwards eliminated process funcion because its apparently to complicated for the entire system
