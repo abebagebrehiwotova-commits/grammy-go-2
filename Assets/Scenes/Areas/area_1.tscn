@@ -8,17 +8,11 @@
 [node name="AreaExit" parent="." index="2"]
 position = Vector2(224, 5)
 
-[node name="GroceryItems" parent="Node2D" index="0"]
-position = Vector2(132, -25)
-
-[node name="GroceryItems2" parent="Node2D" index="1"]
-position = Vector2(72, -53)
-
-[node name="GroceryItems3" parent="Node2D" index="2"]
+[node name="GroceryItems3" parent="Node2D" index="1"]
 position = Vector2(7, -22)
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="5"]
 z_index = -4096
-position = Vector2(-41.444435, -59.5)
-scale = Vector2(0.17337963, 0.13981481)
+position = Vector2(65.055565, -117)
+scale = Vector2(0.28431714, 0.24629629)
 texture = ExtResource("2_3uyhe")

@@ -15,7 +15,7 @@ jump_power = 8.0
 inv = ExtResource("2_t1xgp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(0, -8)
+offset = Vector2(0, -65)
 zoom = Vector2(3, 3)
 
 [node name="AgentAnimator" type="Node2D" parent="."]
