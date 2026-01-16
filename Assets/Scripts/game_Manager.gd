@@ -7,7 +7,6 @@ var grocery_items=0
 
 
 
-
 func _ready():
 	reset_grocery_items()
 
