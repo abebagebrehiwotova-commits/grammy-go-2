@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ctp8h7ikhh5vk" path="res://Assets/Sprites/oat_milk png.png" id="2_owaum"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
-size = Vector2(8.75, 14.75)
+size = Vector2(11, 12)
 
 [node name="GroceryItems" type="Area2D"]
 script = ExtResource("1_q8jot")
@@ -15,7 +15,7 @@ scale = Vector2(0.020961542, 0.020961542)
 texture = ExtResource("2_owaum")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.625, -0.625)
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_h3fog")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
