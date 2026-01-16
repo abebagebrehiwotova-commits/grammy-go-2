@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://gl40wgl101uw"]
+[gd_scene load_steps=9 format=3 uid="uid://gl40wgl101uw"]
 
 [ext_resource type="Texture2D" uid="uid://btsg530d6ypmo" path="res://Assets/Sprites/Tile.png" id="1_uidp5"]
 [ext_resource type="PackedScene" uid="uid://b8wd5ixemtuwf" path="res://Assets/Scenes/player.tscn" id="2_3uyhe"]
 [ext_resource type="PackedScene" uid="uid://bq0ebt3n4nj3p" path="res://Assets/Scenes/Area Functionality/area_exit.tscn" id="3_2pegy"]
 [ext_resource type="PackedScene" uid="uid://c8cobi40ubgbl" path="res://Assets/Scenes/grocery_items.tscn" id="4_dp7b8"]
+[ext_resource type="PackedScene" uid="uid://xok3tqrjcisc" path="res://Assets/Scenes/sugar.tscn" id="5_esldt"]
 [ext_resource type="PackedScene" uid="uid://bqws0q45xtint" path="res://Assets/inventory/items/inv_ui.tscn" id="5_kfrer"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uyhe"]
@@ -676,15 +677,19 @@ position = Vector2(80, -1)
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="GroceryItems" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(-25, -27)
-
-[node name="GroceryItems2" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(-58, -27)
+[node name="oat_milk" parent="Node2D" instance=ExtResource("4_dp7b8")]
+position = Vector2(-26, -59)
 
 [node name="GroceryItems3" parent="Node2D" instance=ExtResource("4_dp7b8")]
 position = Vector2(-42, -27)
 
+[node name="sugar" parent="Node2D" instance=ExtResource("5_esldt")]
+position = Vector2(-24, -26)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Inv_UI" parent="CanvasLayer" groups=["inventory"] instance=ExtResource("5_kfrer")]
+offset_left = 11.0
+offset_top = 12.0
+offset_right = 51.0
+offset_bottom = 52.0
