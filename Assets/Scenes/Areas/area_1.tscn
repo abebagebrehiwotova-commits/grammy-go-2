@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctdq7t45yqyd4"]
+[gd_scene load_steps=3 format=3 uid="uid://ctdq7t45yqyd4"]
 
 [ext_resource type="PackedScene" uid="uid://gl40wgl101uw" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
+[ext_resource type="Texture2D" uid="uid://dftkgl7c4a243" path="res://Assets/Sprites/Supermarkt Background Final.png" id="2_3uyhe"]
 
 [node name="Area1" instance=ExtResource("1_uidp5")]
 
@@ -15,3 +16,9 @@ position = Vector2(72, -53)
 
 [node name="GroceryItems3" parent="Node2D" index="2"]
 position = Vector2(7, -22)
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="5"]
+z_index = -4096
+position = Vector2(-41.444435, -59.5)
+scale = Vector2(0.17337963, 0.13981481)
+texture = ExtResource("2_3uyhe")
