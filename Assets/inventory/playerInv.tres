@@ -1,10 +1,9 @@
-[gd_resource type="Resource" script_class="Inv" load_steps=4 format=3 uid="uid://dlbwyifvbfyfg"]
+[gd_resource type="Resource" script_class="Inv" load_steps=3 format=3 uid="uid://dlbwyifvbfyfg"]
 
 [ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_38stl"]
-[ext_resource type="Resource" uid="uid://d1px5mcfhl3tf" path="res://Assets/inventory/InvRes/oat_milk.tres" id="2_38stl"]
 [ext_resource type="Script" uid="uid://dqoprvhl3xtu2" path="res://Assets/inventory/inventory.gd" id="3_qloqp"]
 
 [resource]
 script = ExtResource("3_qloqp")
-items = Array[ExtResource("1_38stl")]([null, null, null, null, null, ExtResource("2_38stl")])
+items = Array[ExtResource("1_38stl")]([null, null, null, null, null, null, null, null, null])
 metadata/_custom_type_script = "uid://dqoprvhl3xtu2"

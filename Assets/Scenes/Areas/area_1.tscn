@@ -1,29 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctdq7t45yqyd4"]
+[gd_scene load_steps=2 format=3 uid="uid://ck2axyfa1g2sw"]
 
 [ext_resource type="PackedScene" uid="uid://gl40wgl101uw" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
-[ext_resource type="Texture2D" uid="uid://dftkgl7c4a243" path="res://Assets/Sprites/Supermarkt Background Final.png" id="2_3uyhe"]
 
-[node name="Area1" instance=ExtResource("1_uidp5")]
+[node name="area_1" instance=ExtResource("1_uidp5")]
 
 [node name="AreaExit" parent="." index="2"]
-position = Vector2(224, 5)
+position = Vector2(520, -1)
 
-<<<<<<< Updated upstream
-[node name="GroceryItems3" parent="Node2D" index="1"]
-position = Vector2(7, -22)
-
-[node name="Sprite2D" type="Sprite2D" parent="." index="5"]
-z_index = -4096
-position = Vector2(65.055565, -117)
-scale = Vector2(0.28431714, 0.24629629)
-texture = ExtResource("2_3uyhe")
-=======
 [node name="oat_milk" parent="Node2D" index="0"]
-position = Vector2(123, -44)
+position = Vector2(349, -58)
 
-[node name="GroceryItems3" parent="Node2D" index="1"]
-position = Vector2(290, -59)
+[node name="sugar" parent="Node2D" index="1"]
+position = Vector2(186, -36)
 
-[node name="sugar" parent="Node2D" index="2"]
-position = Vector2(403, -38)
->>>>>>> Stashed changes
+[node name="flour" parent="Node2D" index="2"]
+position = Vector2(10, -52)

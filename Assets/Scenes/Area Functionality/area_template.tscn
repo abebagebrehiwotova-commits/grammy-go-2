@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://gl40wgl101uw"]
+[gd_scene load_steps=10 format=3 uid="uid://gl40wgl101uw"]
 
 [ext_resource type="Texture2D" uid="uid://btsg530d6ypmo" path="res://Assets/Sprites/Tile.png" id="1_uidp5"]
 [ext_resource type="PackedScene" uid="uid://b8wd5ixemtuwf" path="res://Assets/Scenes/player.tscn" id="2_3uyhe"]
 [ext_resource type="PackedScene" uid="uid://bq0ebt3n4nj3p" path="res://Assets/Scenes/Area Functionality/area_exit.tscn" id="3_2pegy"]
-[ext_resource type="PackedScene" uid="uid://c8cobi40ubgbl" path="res://Assets/Scenes/grocery_items.tscn" id="4_dp7b8"]
-[ext_resource type="PackedScene" uid="uid://xok3tqrjcisc" path="res://Assets/Scenes/sugar.tscn" id="5_esldt"]
+[ext_resource type="PackedScene" uid="uid://c8cobi40ubgbl" path="res://Assets/Scenes/GroceryItems/grocery_items.tscn" id="4_dp7b8"]
+[ext_resource type="PackedScene" uid="uid://xok3tqrjcisc" path="res://Assets/Scenes/GroceryItems/sugar.tscn" id="5_esldt"]
 [ext_resource type="PackedScene" uid="uid://bqws0q45xtint" path="res://Assets/inventory/items/inv_ui.tscn" id="5_kfrer"]
+[ext_resource type="PackedScene" uid="uid://dueyfabxutu8m" path="res://Assets/Scenes/GroceryItems/flour.tscn" id="6_3um3i"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uyhe"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_esldt"]
 texture = ExtResource("1_uidp5")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -660,7 +661,7 @@ texture = ExtResource("1_uidp5")
 
 [sub_resource type="TileSet" id="TileSet_8wi1m"]
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_3uyhe")
+sources/1 = SubResource("TileSetAtlasSource_esldt")
 
 [node name="AreaTemplate" type="Node2D"]
 
@@ -669,7 +670,7 @@ tile_set = SubResource("TileSet_8wi1m")
 format = 2
 layer_0/tile_data = PackedInt32Array(65531, 196609, 4, 65532, 196609, 4, 65533, 196609, 4, 65534, 196609, 4, 65535, 196609, 4, 0, 196609, 4, 1, 196609, 4, 65525, 196609, 4, 65526, 196609, 4, 65527, 196609, 4, 65528, 196609, 4, 65529, 196609, 4, 65530, 196609, 4, 2, 196609, 4, 3, 196609, 4, 4, 196609, 4, 5, 196609, 4, 6, 196609, 4, 7, 196609, 4, 8, 196609, 4, 9, 196609, 4, 10, 196609, 4, 11, 196609, 4, 12, 196609, 4, 13, 196609, 4, 14, 196609, 4, 15, 196609, 4, 16, 196609, 4, 17, 196609, 4, 18, 196609, 4, 19, 196609, 4, 20, 196609, 4, 21, 196609, 4, 22, 196609, 4, 23, 196609, 4, 24, 196609, 4, 25, 196609, 4, 26, 196609, 4, 27, 196609, 4, 28, 196609, 4, 29, 196609, 4, 30, 196609, 4, 31, 196609, 4, 32, 196609, 4, 33, 196609, 4, 34, 196609, 4, 35, 196609, 4, 36, 196609, 4, 37, 196609, 4, 38, 196609, 4, 39, 196609, 4, 40, 196609, 4, 41, 196609, 4, 42, 196609, 4, 43, 196609, 4, 44, 196609, 4, 45, 196609, 4, 46, 196609, 4, 47, 196609, 4, 48, 196609, 4, 49, 196609, 4, 50, 196609, 4, 51, 196609, 4, 52, 196609, 4, 53, 196609, 4, 54, 196609, 4, 55, 196609, 4, 56, 196609, 4, 57, 196609, 4, 58, 196609, 4, 59, 196609, 4, 60, 196609, 4, 61, 196609, 4, 62, 196609, 4, 63, 196609, 4, 64, 196609, 4, 65, 196609, 4, 66, 196609, 4, 67, 196609, 4, 68, 196609, 4, 69, 196609, 4, 70, 196609, 4, 71, 196609, 4, 65523, 196609, 4, 65524, 196609, 4)
 
-[node name="Player" parent="." instance=ExtResource("2_3uyhe")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_3uyhe")]
 position = Vector2(-125, 0)
 
 [node name="AreaExit" parent="." instance=ExtResource("3_2pegy")]
@@ -678,13 +679,13 @@ position = Vector2(80, -1)
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="oat_milk" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(-10, -40)
-
-[node name="GroceryItems3" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(-32, -33)
+position = Vector2(203, -38)
 
 [node name="sugar" parent="Node2D" instance=ExtResource("5_esldt")]
-position = Vector2(6, -34)
+position = Vector2(27, -21)
+
+[node name="flour" parent="Node2D" instance=ExtResource("6_3um3i")]
+position = Vector2(-21, -30)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -7,8 +7,8 @@
 [node name="AreaExit" parent="." index="2"]
 position = Vector2(115, 2)
 
-[node name="GroceryItems" parent="Node2D" index="0"]
-position = Vector2(22, -27)
+[node name="oat_milk" parent="Node2D" index="0"]
+position = Vector2(44, -44)
 
-[node name="GroceryItems3" parent="Node2D" index="2"]
-position = Vector2(-17, -63)
+[node name="sugar" parent="Node2D" index="1"]
+position = Vector2(260, -56)

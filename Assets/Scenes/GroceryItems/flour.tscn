@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dueyfabxutu8m"]
+
+[ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_wjs2c"]
+[ext_resource type="Texture2D" uid="uid://bk6srglwk64vc" path="res://Assets/Sprites/flour.png" id="2_148rh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
+size = Vector2(11, 11)
+
+[node name="flour" type="Area2D"]
+script = ExtResource("1_wjs2c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.0530763, -2.43883)
+scale = Vector2(0.02805153, 0.02805153)
+texture = ExtResource("2_148rh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -1.5)
+shape = SubResource("RectangleShape2D_h3fog")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

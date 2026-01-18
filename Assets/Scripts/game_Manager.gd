@@ -22,44 +22,68 @@ func next_level():
 func set_up_area():
 	reset_grocery_items()
 
-#func add_grocery_item(item_name: String):
-	#grocery_items+=1
-	#print("Eingesammelt:", item_name)
-	#if grocery_items >=3:
-		#var elevator =get_tree().get_first_node_in_group("area_exits") as AreaExit
-		#elevator.open()
-
-
-
 var item_db := {
 	"oat_milk": preload("res://Assets/inventory/InvRes/oat_milk.tres"),
-	"sugar": preload("res://Assets/inventory/InvRes/sugar.tres")}
+	"sugar": preload("res://Assets/inventory/InvRes/sugar.tres"),
+	"flour": preload("res://Assets/inventory/InvRes/flour.tres")}
 
-
+#hinzugefügt 17.01
 func add_grocery_item(item_name: String):
-	grocery_items += 1
+	grocery_items+=1
 	print("Eingesammelt:", item_name)
-
-	# 1. Kennen wir dieses Item?
+#	es wird geprüft ob das Item einen Ressource counterpart hat.
 	if not item_db.has(item_name):
 		print("Kein Resource-Counterpart für:", item_name)
-		return
+#		Ressource holen
+		var item_res = item_db[item_name]
+		
+# 2. Player finden
+	var player = get_tree().get_first_node_in_group("player") as PlayerController
+	if player == null:
+		print("Kein Player in Gruppe 'player' gefunden")
+		#return
+	if grocery_items >=3:
+		var elevator =get_tree().get_first_node_in_group("area_exits") as AreaExit
+		elevator.open()
 
-	# 2. Resource holen
+
+
+
+
+#entfernt 17.01
+#func add_grocery_item(item_name: String):
+	#grocery_items += 1
+	#print("Eingesammelt:", item_name)
+#
+	## 1. Kennen wir dieses Item?
+	#if not item_db.has(item_name):
+		#print("Kein Resource-Counterpart für:", item_name)
+		#return
+
+	 #2. Resource holen
 	#var item_res = item_db[item_name]
-
-	# 3. Ins Inventory legen
-	#var player = get_tree().get_first_node_in_group("player")
-
+#
+	# 2. Player finden
+	#var player = get_tree().get_first_node_in_group("player") as PlayerController
+	#if player == null:
+		#print("Kein Player in Gruppe 'player' gefunden")
+		#return
+#
+	## 3. Ins Inventar legen
+	#if player.inv == null:
+		#print("Player hat kein Inventory zugewiesen")
+		#return
+#
 	#player.inv.items.append(item_res)
 
-	# 4. UI aktualisieren (falls du das schon hast)
+	# 4. UI aktualisieren (optional)
 	#update_inventory_ui()
+#
+	 #5. Dein bestehendes Gameplay
+	#if grocery_items >= 1:
+		#var elevator = get_tree().get_first_node_in_group("area_exits") as AreaExit
+		#elevator.open()
 
-	# 5. Dein bestehendes Gameplay
-	if grocery_items >= 1:
-		var elevator = get_tree().get_first_node_in_group("area_exits") as AreaExit
-		elevator.open()
 
 
 

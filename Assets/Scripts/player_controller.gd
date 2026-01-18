@@ -12,11 +12,16 @@ class_name PlayerController
 # Inv_UI (Control) ist in der Scene Group "inventory",
 # damit der PlayerController das Inventory-UI zur Laufzeit finden
 # und Methoden wie toggle() aufrufen kann (ohne Parent/Child-Abhängigkeit).
-@onready var inventory_ui = get_tree().get_first_node_in_group("inventory")
 
+
+#verweist Player auf das Inventory auf das über "groups" zugegriffen werden kann
+@onready var inventory_ui = get_tree().get_first_node_in_group("inventory")
 func _unhandled_input(event):
 	if event.is_action_pressed("i"):
 		inventory_ui.toggle()
+
+
+
 
 
 var speed_multiplier=30.0
