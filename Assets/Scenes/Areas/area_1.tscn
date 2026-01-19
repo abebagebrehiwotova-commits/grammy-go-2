@@ -1791,14 +1791,14 @@ volume_db = -16.0
 [node name="AreaExit" parent="." index="5"]
 position = Vector2(520, -1)
 
-[node name="oat_milk" parent="Node2D" index="0"]
-position = Vector2(1605, -58)
-
-[node name="sugar" parent="Node2D" index="1"]
+[node name="sugar" parent="Node2D" index="0"]
 position = Vector2(938, -124)
 
-[node name="flour" parent="Node2D" index="2"]
+[node name="flour" parent="Node2D" index="1"]
 position = Vector2(10, -52)
+
+[node name="oat_milk" parent="Node2D" index="2"]
+position = Vector2(1605, -58)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="8"]
 stream = ExtResource("2_3uyhe")
