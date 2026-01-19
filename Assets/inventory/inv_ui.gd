@@ -10,7 +10,7 @@ var is_open = false
 
 #function to make sure  inventory is closed at the beginning of the game
 func _ready():
-	open()
+	close()
 	var gm = get_tree().get_first_node_in_group("game_manager")
 	if gm:
 		gm.inventory_changed.connect(update_slots)
@@ -26,9 +26,9 @@ func open():
 	is_open=true
 
 #change visibilty
-#func close():
-	#visible = false
-	#is_open = false
+func close():
+	visible = false
+	is_open = false
 #
 #func toggle():
 	#if is_open:
