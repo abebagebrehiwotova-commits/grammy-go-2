@@ -5,3 +5,4 @@
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_amfv3")
 autoplay = true
+max_distance = 100000.0
