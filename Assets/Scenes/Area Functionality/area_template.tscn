@@ -678,14 +678,14 @@ position = Vector2(80, -1)
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="oat_milk" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(203, -38)
-
 [node name="sugar" parent="Node2D" instance=ExtResource("5_esldt")]
 position = Vector2(27, -21)
 
 [node name="flour" parent="Node2D" instance=ExtResource("6_3um3i")]
 position = Vector2(-21, -30)
+
+[node name="oat_milk" parent="Node2D" instance=ExtResource("4_dp7b8")]
+position = Vector2(203, -38)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

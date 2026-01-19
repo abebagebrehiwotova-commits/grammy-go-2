@@ -28,6 +28,9 @@ var item_db := {
 	"flour": preload("res://Assets/inventory/InvRes/flour.tres")}
 
 #hinzugefügt 17.01
+#Signal definieren für "emit_signal("inventory_changed")",in add_grocery_item.
+signal inventory_changed
+
 func add_grocery_item(item_name: String):
 	grocery_items+=1
 	print("Eingesammelt:", item_name)
@@ -35,12 +38,13 @@ func add_grocery_item(item_name: String):
 	if not item_db.has(item_name):
 		print("Kein Resource-Counterpart für:", item_name)
 #		Ressource holen
-		var item_res = item_db[item_name]
-		
-# 2. Player finden
+	var item_res = item_db[item_name]
+	 # 2. Player finden
 	var player = get_tree().get_first_node_in_group("player") as PlayerController
 	if player == null:
 		print("Kein Player in Gruppe 'player' gefunden")
+	player.inv.items.erase(item_res)
+	emit_signal("inventory_changed")
 		#return
 	if grocery_items >=3:
 		var elevator =get_tree().get_first_node_in_group("area_exits") as AreaExit
@@ -73,7 +77,7 @@ func add_grocery_item(item_name: String):
 	#if player.inv == null:
 		#print("Player hat kein Inventory zugewiesen")
 		#return
-#
+
 	#player.inv.items.append(item_res)
 
 	# 4. UI aktualisieren (optional)
