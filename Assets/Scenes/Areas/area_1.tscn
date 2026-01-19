@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ck2axyfa1g2sw"]
+[gd_scene load_steps=23 format=3 uid="uid://ck2axyfa1g2sw"]
 
 [ext_resource type="PackedScene" uid="uid://gl40wgl101uw" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
 [ext_resource type="AudioStream" uid="uid://h1nj1rwyd3us" path="res://Assets/music/background music.wav" id="2_3uyhe"]
@@ -9,6 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://cjy55l5hv4g7o" path="res://Assets/Sprites/OtherAssets/16x16/Room_Builder_free_16x16.png" id="5_0ufq0"]
 [ext_resource type="AudioStream" uid="uid://bhxbjj75s663s" path="res://Assets/music/footsteps2.wav" id="5_u1wc8"]
 [ext_resource type="AudioStream" uid="uid://cbmdfcnknjytg" path="res://Assets/music/shopping cart.wav" id="6_7lgy5"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/apple.tscn" id="9_u1wc8"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/blueberry.tscn" id="10_ys1tx"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/carrot.tscn" id="11_ttsc2"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/grape.tscn" id="12_lbrap"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/nut.tscn" id="13_xai42"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/honey.tscn" id="14_c8jce"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1wc8"]
 texture = ExtResource("2_nlyig")
@@ -1791,13 +1797,31 @@ volume_db = -16.0
 [node name="AreaExit" parent="." index="5"]
 position = Vector2(520, -1)
 
-[node name="sugar" parent="Node2D" index="0"]
+[node name="apple" parent="Node2D" index="0" instance=ExtResource("9_u1wc8")]
+position = Vector2(8676, -109)
+
+[node name="blueberry" parent="Node2D" index="1" instance=ExtResource("10_ys1tx")]
+position = Vector2(5873, -177)
+
+[node name="sugar" parent="Node2D" index="2"]
 position = Vector2(938, -124)
 
-[node name="flour" parent="Node2D" index="1"]
+[node name="carrot" parent="Node2D" index="3" instance=ExtResource("11_ttsc2")]
+position = Vector2(2566, -136)
+
+[node name="grape" parent="Node2D" index="4" instance=ExtResource("12_lbrap")]
+position = Vector2(7083, -21)
+
+[node name="nut" parent="Node2D" index="5" instance=ExtResource("13_xai42")]
+position = Vector2(3658, -138)
+
+[node name="flour" parent="Node2D" index="6"]
 position = Vector2(10, -52)
 
-[node name="oat_milk" parent="Node2D" index="2"]
+[node name="honey" parent="Node2D" index="7" instance=ExtResource("14_c8jce")]
+position = Vector2(4604, -192)
+
+[node name="oat_milk" parent="Node2D" index="8"]
 position = Vector2(1605, -58)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="8"]

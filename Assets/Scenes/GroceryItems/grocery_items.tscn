@@ -1,21 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://c8cobi40ubgbl"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_q8jot"]
-[ext_resource type="Texture2D" uid="uid://ctp8h7ikhh5vk" path="res://Assets/Sprites/oat_milk png.png" id="2_owaum"]
+[ext_resource type="Texture2D" uid="uid://bu82knjskwyw4" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Egg_Icon.png" id="2_s7r7j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
-size = Vector2(11, 12)
+size = Vector2(13, 12)
 
-[node name="GroceryItems" type="Area2D"]
+[node name="egg" type="Area2D"]
 script = ExtResource("1_q8jot")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-0.54999924, -0.797498)
-scale = Vector2(0.020961542, 0.020961542)
-texture = ExtResource("2_owaum")
+position = Vector2(2.3841852e-07, -0.12374865)
+scale = Vector2(0.031249998, 0.030766603)
+texture = ExtResource("2_s7r7j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_h3fog")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
