@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nknt3sx6wocs"
-path="res://.godot/imported/flour.png-c46ca973c930ea1914f4e0ad16ff2f8d.ctex"
+uid="uid://bsrun3s0ua0k7"
+path="res://.godot/imported/SpriteSheet4.png-53691ca659dfb571982c604ab3ed76d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/flour.png"
-dest_files=["res://.godot/imported/flour.png-c46ca973c930ea1914f4e0ad16ff2f8d.ctex"]
+source_file="res://Assets/Sprites/SpriteSheet4.png"
+dest_files=["res://.godot/imported/SpriteSheet4.png-53691ca659dfb571982c604ab3ed76d8.ctex"]
 
 [params]
 

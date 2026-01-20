@@ -1,8 +1,8 @@
 extends Node
+class_name gameManager
 
 var current_area = 1
 var area_path="res://Assets/Scenes/Areas/"
-
 var grocery_items=0
 
 
@@ -24,8 +24,16 @@ func set_up_area():
 
 var item_db := {
 	"oat_milk": preload("res://Assets/inventory/InvRes/oat_milk.tres"),
-	"sugar": preload("res://Assets/inventory/InvRes/sugar.tres"),
-	"flour": preload("res://Assets/inventory/InvRes/flour.tres")}
+	"banana": preload("res://Assets/inventory/InvRes/banana.tres"),
+	"flour": preload("res://Assets/inventory/InvRes/flour.tres"),
+	"apple": preload("res://Assets/inventory/InvRes/apple.tres"),
+	"blueberry": preload("res://Assets/inventory/InvRes/blueberry.tres"),
+	"carrot": preload("res://Assets/inventory/InvRes/carrot.tres"),
+	"egg": preload("res://Assets/inventory/InvRes/egg.tres"),
+	"grape": preload("res://Assets/inventory/InvRes/grape.tres"),
+	"honey": preload("res://Assets/inventory/InvRes/honey.tres"),
+	"nut": preload("res://Assets/inventory/InvRes/nut.tres")
+	}
 
 #hinzugefügt 17.01
 #Signal definieren für "emit_signal("inventory_changed")",in add_grocery_item.
@@ -35,7 +43,7 @@ func add_grocery_item(item_name: String):
 	grocery_items+=1
 	print("Eingesammelt:", item_name)
 #	es wird geprüft ob das Item einen Ressource counterpart hat.
-	if not item_db.has(item_name):
+	if not item_db.has(item_name):    
 		print("Kein Resource-Counterpart für:", item_name)
 #		Ressource holen
 	var item_res = item_db[item_name]
@@ -44,9 +52,12 @@ func add_grocery_item(item_name: String):
 	if player == null:
 		print("Kein Player in Gruppe 'player' gefunden")
 	player.inv.items.erase(item_res)
+	var inventory_ui = get_tree().get_first_node_in_group("inventory")
+	inventory_ui.update_slots()
+	
 	emit_signal("inventory_changed")
 		#return
-	if grocery_items >=3:
+	if grocery_items >=9:
 		var elevator =get_tree().get_first_node_in_group("area_exits") as AreaExit
 		elevator.open()
 

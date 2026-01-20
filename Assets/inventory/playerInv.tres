@@ -1,10 +1,18 @@
-[gd_resource type="Resource" script_class="Inv" load_steps=4 format=3 uid="uid://dlbwyifvbfyfg"]
+[gd_resource type="Resource" script_class="Inv" load_steps=12 format=3 uid="uid://dlbwyifvbfyfg"]
 
 [ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_38stl"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/apple.tres" id="2_crfwt"]
 [ext_resource type="Resource" uid="uid://b40tirtp815pn" path="res://Assets/inventory/InvRes/flour.tres" id="2_qloqp"]
+[ext_resource type="Resource" uid="uid://ke8roy5sk0k3" path="res://Assets/inventory/InvRes/banana.tres" id="3_06o0t"]
 [ext_resource type="Script" uid="uid://dqoprvhl3xtu2" path="res://Assets/inventory/inventory.gd" id="3_qloqp"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/blueberry.tres" id="4_wnaf0"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/carrot.tres" id="5_cuqnp"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/egg.tres" id="6_lhxdm"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/grape.tres" id="8_t6lfl"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/honey.tres" id="9_7qu1m"]
+[ext_resource type="Resource" path="res://Assets/inventory/InvRes/nut.tres" id="10_luwf7"]
 
 [resource]
 script = ExtResource("3_qloqp")
-items = Array[ExtResource("1_38stl")]([ExtResource("2_qloqp"), ExtResource("2_qloqp"), ExtResource("2_qloqp"), ExtResource("2_qloqp"), ExtResource("2_qloqp")])
+items = Array[ExtResource("1_38stl")]([ExtResource("2_crfwt"), ExtResource("3_06o0t"), ExtResource("4_wnaf0"), ExtResource("5_cuqnp"), ExtResource("6_lhxdm"), ExtResource("2_qloqp"), ExtResource("8_t6lfl"), ExtResource("9_7qu1m"), ExtResource("10_luwf7")])
 metadata/_custom_type_script = "uid://dqoprvhl3xtu2"

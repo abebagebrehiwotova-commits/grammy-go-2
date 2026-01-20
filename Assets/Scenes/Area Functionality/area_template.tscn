@@ -1,12 +1,19 @@
-[gd_scene load_steps=10 format=3 uid="uid://gl40wgl101uw"]
+[gd_scene load_steps=17 format=3 uid="uid://gl40wgl101uw"]
 
+[ext_resource type="Script" uid="uid://u3c1mnkfpxpk" path="res://Assets/Scripts/game_Manager.gd" id="1_gpg4b"]
 [ext_resource type="Texture2D" uid="uid://btsg530d6ypmo" path="res://Assets/Sprites/Tile.png" id="1_uidp5"]
 [ext_resource type="PackedScene" uid="uid://b8wd5ixemtuwf" path="res://Assets/Scenes/player.tscn" id="2_3uyhe"]
 [ext_resource type="PackedScene" uid="uid://bq0ebt3n4nj3p" path="res://Assets/Scenes/Area Functionality/area_exit.tscn" id="3_2pegy"]
-[ext_resource type="PackedScene" uid="uid://c8cobi40ubgbl" path="res://Assets/Scenes/GroceryItems/grocery_items.tscn" id="4_dp7b8"]
-[ext_resource type="PackedScene" uid="uid://xok3tqrjcisc" path="res://Assets/Scenes/GroceryItems/sugar.tscn" id="5_esldt"]
 [ext_resource type="PackedScene" uid="uid://bqws0q45xtint" path="res://Assets/inventory/items/inv_ui.tscn" id="5_kfrer"]
 [ext_resource type="PackedScene" uid="uid://dueyfabxutu8m" path="res://Assets/Scenes/GroceryItems/flour.tscn" id="6_3um3i"]
+[ext_resource type="PackedScene" uid="uid://dt0p8o7uvijri" path="res://Assets/Scenes/GroceryItems/blueberry.tscn" id="7_tmiqi"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/apple.tscn" id="7_u5kvw"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/carrot.tscn" id="8_licb0"]
+[ext_resource type="PackedScene" uid="uid://djo5og54aoh2x" path="res://Assets/Scenes/GroceryItems/egg.tscn" id="9_duw1s"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/grape.tscn" id="10_mqefy"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/honey.tscn" id="11_mqefy"]
+[ext_resource type="PackedScene" uid="uid://xok3tqrjcisc" path="res://Assets/Scenes/GroceryItems/banana.tscn" id="12_gpg4b"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/nut.tscn" id="12_ro12e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_esldt"]
 texture = ExtResource("1_uidp5")
@@ -663,7 +670,11 @@ texture = ExtResource("1_uidp5")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_esldt")
 
-[node name="AreaTemplate" type="Node2D"]
+[node name="AreaTemplate" type="Node2D" groups=["game_manager"]]
+script = ExtResource("1_gpg4b")
+
+[node name="AreaExit" parent="." instance=ExtResource("3_2pegy")]
+position = Vector2(-234, -2)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_8wi1m")
@@ -673,19 +684,34 @@ layer_0/tile_data = PackedInt32Array(65531, 196609, 4, 65532, 196609, 4, 65533, 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("2_3uyhe")]
 position = Vector2(-125, 0)
 
-[node name="AreaExit" parent="." instance=ExtResource("3_2pegy")]
-position = Vector2(80, -1)
-
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="sugar" parent="Node2D" instance=ExtResource("5_esldt")]
-position = Vector2(27, -21)
-
 [node name="flour" parent="Node2D" instance=ExtResource("6_3um3i")]
-position = Vector2(-21, -30)
+position = Vector2(-46, -31)
 
-[node name="oat_milk" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(203, -38)
+[node name="apple" parent="Node2D" instance=ExtResource("7_u5kvw")]
+position = Vector2(-29, -30)
+
+[node name="blueberry" parent="Node2D" instance=ExtResource("7_tmiqi")]
+position = Vector2(-13, -29)
+
+[node name="carrot" parent="Node2D" instance=ExtResource("8_licb0")]
+position = Vector2(16, -32)
+
+[node name="egg" parent="Node2D" instance=ExtResource("9_duw1s")]
+position = Vector2(31, -33)
+
+[node name="grape" parent="Node2D" instance=ExtResource("10_mqefy")]
+position = Vector2(45, -31)
+
+[node name="honey" parent="Node2D" instance=ExtResource("11_mqefy")]
+position = Vector2(60, -31)
+
+[node name="nut" parent="Node2D" instance=ExtResource("12_ro12e")]
+position = Vector2(76, -32)
+
+[node name="banana" parent="Node2D" instance=ExtResource("12_gpg4b")]
+position = Vector2(3, -30)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

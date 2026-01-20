@@ -4,24 +4,27 @@ class_name PlayerController
 
 
 
+#<<<<<<< Updated upstream
 #verschiedene Dinge für inventory
 @export var inv:Inv
 @onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
 @onready var step_timer: Timer = $StepTimer
 @onready var sfx_steps: AudioStreamPlayer2D = $sfx_steps
 @onready var sfx_shoppingcart: AudioStreamPlayer2D = $sfx_shoppingcart
+#=======
+
 
 
 #inventory-Dinge
 
-
+#>>>>>>> Stashed changes
 
 # Inv_UI (Control) ist in der Scene Group "inventory",
 # damit der PlayerController das Inventory-UI zur Laufzeit finden kann
 #Zeile verweist Player auf das Inventory auf das über "groups" zugegriffen werden kann
 #nächste Zeile legt Inv code in inv
 @onready var inventory_ui = get_tree().get_first_node_in_group("inventory")
-@export var innv:Inv
+#@export var inv:Inv
 
 func _ready() -> void:
 	inventory_ui.open()
@@ -48,10 +51,11 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_power*jump_multiplier
-
+#<<<<<<< Updated upstream
 		sfx_jump.play()
 
-
+#=======
+#>>>>>>> Stashed changes
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Input.get_axis("move_left", "move_right")
