@@ -1781,6 +1781,7 @@ stream = ExtResource("5_u1wc8")
 stream = ExtResource("6_7lgy5")
 volume_db = -16.0
 
+<<<<<<< Updated upstream
 [node name="flour" parent="Node2D" index="0"]
 position = Vector2(10, -53)
 
@@ -1813,6 +1814,20 @@ offset_left = -48.0
 offset_top = 40.0
 offset_right = -8.0
 offset_bottom = 80.0
+=======
+[node name="AreaExit" parent="." index="5"]
+z_index = 100
+position = Vector2(9486, 2)
+
+[node name="sugar" parent="Node2D" index="0"]
+position = Vector2(938, -124)
+
+[node name="flour" parent="Node2D" index="1"]
+position = Vector2(10, -52)
+
+[node name="oat_milk" parent="Node2D" index="2"]
+position = Vector2(1605, -58)
+>>>>>>> Stashed changes
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="8"]
 stream = ExtResource("2_3uyhe")
