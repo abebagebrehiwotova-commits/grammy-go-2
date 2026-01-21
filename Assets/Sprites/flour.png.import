@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bagco32v72ewg"
-path="res://.godot/imported/tiles_boxen.png-2b0601140d658cd762aa52ff957c7b20.ctex"
+uid="uid://nknt3sx6wocs"
+path="res://.godot/imported/flour.png-c46ca973c930ea1914f4e0ad16ff2f8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tiles_boxen.png"
-dest_files=["res://.godot/imported/tiles_boxen.png-2b0601140d658cd762aa52ff957c7b20.ctex"]
+source_file="res://Assets/Sprites/flour.png"
+dest_files=["res://.godot/imported/flour.png-c46ca973c930ea1914f4e0ad16ff2f8d.ctex"]
 
 [params]
 
