@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://bo83lkv6ubxdl"]
 
-[ext_resource type="Texture2D" uid="uid://d3b71xuslgtqi" path="res://Assets/Sprites/tiles_boxen.png" id="1_4muih"]
+[ext_resource type="Texture2D" uid="uid://d1lsrp1rsj7aw" path="res://Assets/Sprites/tiles_boxen.png" id="1_4muih"]
 [ext_resource type="PackedScene" uid="uid://b8wd5ixemtuwf" path="res://Assets/Scenes/player.tscn" id="1_xvb56"]
 [ext_resource type="Texture2D" uid="uid://dftkgl7c4a243" path="res://Assets/Sprites/Supermarkt Background Final.png" id="2_c8ix6"]
 [ext_resource type="AudioStream" uid="uid://doj6i0da8wc25" path="res://Assets/music/jump.wav" id="4_deijv"]
