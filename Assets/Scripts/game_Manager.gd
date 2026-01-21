@@ -3,6 +3,7 @@ class_name gameManager
 
 var current_area = 1
 var area_path="res://Assets/Scenes/Areas/"
+
 var grocery_items=0
 
 

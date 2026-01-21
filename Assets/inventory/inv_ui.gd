@@ -10,6 +10,7 @@ var is_open = false
 
 #function to make sure  inventory is closed at the beginning of the game
 func _ready():
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 #<<<<<<< HEAD
 	open()
@@ -19,6 +20,8 @@ func _ready():
 
 #>>>>>>> b8324574da511304f93de8a6fbfbc6ced68a4330
 =======
+=======
+>>>>>>> parent of b832457 (Abgabeready)
 	open()
 	var gm = get_tree().get_first_node_in_group("game_manager")
 >>>>>>> Stashed changes
@@ -39,6 +42,7 @@ func open():
 	is_open=true
 
 #change visibilty
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 func close():
 	visible = false
@@ -48,6 +52,11 @@ func close():
 	#visible = false
 	#is_open = false
 >>>>>>> Stashed changes
+=======
+#func close():
+	#visible = false
+	#is_open = false
+>>>>>>> parent of b832457 (Abgabeready)
 #
 #func toggle():
 	#if is_open:
