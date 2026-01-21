@@ -2,8 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream:Assets/Sprites/tiles_boxen.png.import
 uid="uid://d3b71xuslgtqi"
 path="res://.godot/imported/tiles_boxen.png-2b0601140d658cd762aa52ff957c7b20.ctex"
+=======
+uid="uid://nknt3sx6wocs"
+path="res://.godot/imported/flour.png-c46ca973c930ea1914f4e0ad16ff2f8d.ctex"
+>>>>>>> Stashed changes:Assets/Sprites/flour.png.import
 metadata={
 "vram_texture": false
 }

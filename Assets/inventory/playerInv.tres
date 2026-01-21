@@ -1,8 +1,15 @@
+<<<<<<< Updated upstream
 [gd_resource type="Resource" script_class="Inv" load_steps=12 format=3 uid="uid://dlbwyifvbfyfg"]
 
 [ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_38stl"]
 [ext_resource type="Resource" uid="uid://b40tirtp815pn" path="res://Assets/inventory/InvRes/flour.tres" id="2_qloqp"]
 [ext_resource type="Resource" uid="uid://bdngfbqov7ge6" path="res://Assets/inventory/InvRes/carrot.tres" id="3_lbuei"]
+=======
+[gd_resource type="Resource" script_class="Inv" load_steps=4 format=3 uid="uid://dlbwyifvbfyfg"]
+
+[ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_38stl"]
+[ext_resource type="Resource" uid="uid://b40tirtp815pn" path="res://Assets/inventory/InvRes/flour.tres" id="2_qloqp"]
+>>>>>>> Stashed changes
 [ext_resource type="Script" uid="uid://dqoprvhl3xtu2" path="res://Assets/inventory/inventory.gd" id="3_qloqp"]
 [ext_resource type="Resource" uid="uid://d1px5mcfhl3tf" path="res://Assets/inventory/InvRes/egg.tres" id="4_t7myg"]
 [ext_resource type="Resource" uid="uid://co5iyrlo0iive" path="res://Assets/inventory/InvRes/grape.tres" id="5_8xa38"]
@@ -14,5 +21,9 @@
 
 [resource]
 script = ExtResource("3_qloqp")
+<<<<<<< Updated upstream
 items = Array[ExtResource("1_38stl")]([ExtResource("2_qloqp"), ExtResource("3_lbuei"), ExtResource("4_t7myg"), ExtResource("5_8xa38"), ExtResource("6_8xa38"), ExtResource("7_6d7ci"), ExtResource("8_8xa38"), ExtResource("9_6d7ci"), ExtResource("10_crfwt")])
+=======
+items = Array[ExtResource("1_38stl")]([ExtResource("2_qloqp"), ExtResource("2_qloqp"), ExtResource("2_qloqp"), ExtResource("2_qloqp"), ExtResource("2_qloqp")])
+>>>>>>> Stashed changes
 metadata/_custom_type_script = "uid://dqoprvhl3xtu2"

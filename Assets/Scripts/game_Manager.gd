@@ -52,9 +52,12 @@ func add_grocery_item(item_name: String):
 	if player == null:
 		print("Kein Player in Gruppe 'player' gefunden")
 	player.inv.items.erase(item_res)
+<<<<<<< Updated upstream
 	var inventory_ui = get_tree().get_first_node_in_group("inventory")
 	inventory_ui.update_slots()
 	
+=======
+>>>>>>> Stashed changes
 	emit_signal("inventory_changed")
 		#return
 	if grocery_items >=9:
