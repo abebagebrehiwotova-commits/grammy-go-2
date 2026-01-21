@@ -1,23 +1,20 @@
-[gd_scene load_steps=17 format=3 uid="uid://ck2axyfa1g2sw"]
+[gd_scene load_steps=23 format=3 uid="uid://ck2axyfa1g2sw"]
 
 [ext_resource type="PackedScene" uid="uid://gl40wgl101uw" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
 [ext_resource type="AudioStream" uid="uid://h1nj1rwyd3us" path="res://Assets/music/background music.wav" id="2_3uyhe"]
-[ext_resource type="Texture2D" uid="uid://d1lsrp1rsj7aw" path="res://Assets/Sprites/tiles_boxen.png" id="2_nlyig"]
+[ext_resource type="Texture2D" uid="uid://d3b71xuslgtqi" path="res://Assets/Sprites/tiles_boxen.png" id="2_nlyig"]
 [ext_resource type="Texture2D" uid="uid://dftkgl7c4a243" path="res://Assets/Sprites/Supermarkt Background Final.png" id="3_msn23"]
 [ext_resource type="AudioStream" uid="uid://doj6i0da8wc25" path="res://Assets/music/jump.wav" id="4_0ufq0"]
 [ext_resource type="Texture2D" uid="uid://clsybb3hntw0u" path="res://Assets/Sprites/OtherAssets/16x16/Interiors_free_16x16.png" id="4_f20k6"]
 [ext_resource type="Texture2D" uid="uid://cjy55l5hv4g7o" path="res://Assets/Sprites/OtherAssets/16x16/Room_Builder_free_16x16.png" id="5_0ufq0"]
 [ext_resource type="AudioStream" uid="uid://bhxbjj75s663s" path="res://Assets/music/footsteps2.wav" id="5_u1wc8"]
 [ext_resource type="AudioStream" uid="uid://cbmdfcnknjytg" path="res://Assets/music/shopping cart.wav" id="6_7lgy5"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/apple.tscn" id="9_u1wc8"]
-[ext_resource type="PackedScene" uid="uid://dt0p8o7uvijri" path="res://Assets/Scenes/GroceryItems/blueberry.tscn" id="10_ys1tx"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/blueberry.tscn" id="10_ys1tx"]
 [ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/carrot.tscn" id="11_ttsc2"]
 [ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/grape.tscn" id="12_lbrap"]
 [ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/nut.tscn" id="13_xai42"]
 [ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/honey.tscn" id="14_c8jce"]
-=======
->>>>>>> parent of 08723c7 (Insh)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1wc8"]
 texture = ExtResource("2_nlyig")
@@ -1794,6 +1791,7 @@ volume_db = -16.0
 [node name="flour" parent="Node2D" index="0"]
 position = Vector2(10, -53)
 
+<<<<<<< HEAD
 [node name="apple" parent="Node2D" index="1"]
 position = Vector2(-87, -48)
 
@@ -1808,6 +1806,25 @@ position = Vector2(-11, -53)
 
 [node name="grape" parent="Node2D" index="5"]
 position = Vector2(34, -56)
+=======
+[node name="apple" parent="Node2D" index="0" instance=ExtResource("9_u1wc8")]
+position = Vector2(8676, -109)
+
+[node name="blueberry" parent="Node2D" index="1" instance=ExtResource("10_ys1tx")]
+position = Vector2(5873, -177)
+
+[node name="sugar" parent="Node2D" index="2"]
+position = Vector2(938, -124)
+
+[node name="carrot" parent="Node2D" index="3" instance=ExtResource("11_ttsc2")]
+position = Vector2(2566, -136)
+
+[node name="grape" parent="Node2D" index="4" instance=ExtResource("12_lbrap")]
+position = Vector2(7083, -21)
+
+[node name="nut" parent="Node2D" index="5" instance=ExtResource("13_xai42")]
+position = Vector2(3658, -138)
+>>>>>>> parent of b832457 (Abgabeready)
 
 [node name="honey" parent="Node2D" index="6"]
 position = Vector2(54, -55)
@@ -1834,7 +1851,14 @@ position = Vector2(938, -124)
 [node name="flour" parent="Node2D" index="1"]
 position = Vector2(10, -52)
 
+<<<<<<< HEAD
 [node name="oat_milk" parent="Node2D" index="2"]
+=======
+[node name="honey" parent="Node2D" index="7" instance=ExtResource("14_c8jce")]
+position = Vector2(4604, -192)
+
+[node name="oat_milk" parent="Node2D" index="8"]
+>>>>>>> parent of b832457 (Abgabeready)
 position = Vector2(1605, -58)
 >>>>>>> Stashed changes
 
