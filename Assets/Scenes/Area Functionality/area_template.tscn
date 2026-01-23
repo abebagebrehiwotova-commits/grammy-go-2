@@ -1,12 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://gl40wgl101uw"]
+[gd_scene load_steps=16 format=3 uid="uid://gl40wgl101uw"]
 
 [ext_resource type="Texture2D" uid="uid://btsg530d6ypmo" path="res://Assets/Sprites/Tile.png" id="1_uidp5"]
 [ext_resource type="PackedScene" uid="uid://b8wd5ixemtuwf" path="res://Assets/Scenes/player.tscn" id="2_3uyhe"]
 [ext_resource type="PackedScene" uid="uid://bq0ebt3n4nj3p" path="res://Assets/Scenes/Area Functionality/area_exit.tscn" id="3_2pegy"]
-[ext_resource type="PackedScene" uid="uid://c8cobi40ubgbl" path="res://Assets/Scenes/GroceryItems/grocery_items.tscn" id="4_dp7b8"]
-[ext_resource type="PackedScene" uid="uid://xok3tqrjcisc" path="res://Assets/Scenes/GroceryItems/sugar.tscn" id="5_esldt"]
 [ext_resource type="PackedScene" uid="uid://bqws0q45xtint" path="res://Assets/inventory/items/inv_ui.tscn" id="5_kfrer"]
 [ext_resource type="PackedScene" uid="uid://dueyfabxutu8m" path="res://Assets/Scenes/GroceryItems/flour.tscn" id="6_3um3i"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/apple.tscn" id="7_u5kvw"]
+[ext_resource type="PackedScene" uid="uid://dfdpq30ps75s1" path="res://Assets/Scenes/GroceryItems/blueberry.tscn" id="8_tmiqi"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/carrot.tscn" id="9_licb0"]
+[ext_resource type="PackedScene" uid="uid://djo5og54aoh2x" path="res://Assets/Scenes/GroceryItems/egg.tscn" id="10_duw1s"]
+[ext_resource type="PackedScene" uid="uid://ci6hbghdfnhjn" path="res://Assets/Scenes/GroceryItems/banana.tscn" id="11_mqefy"]
+[ext_resource type="PackedScene" uid="uid://bm13clj0klc6a" path="res://Assets/Scenes/GroceryItems/grape.tscn" id="12_ro12e"]
+[ext_resource type="PackedScene" uid="uid://blkvttcdxtd5r" path="res://Assets/Scenes/GroceryItems/honey.tscn" id="13_gpg4b"]
+[ext_resource type="PackedScene" uid="uid://pevaus8r6wko" path="res://Assets/Scenes/GroceryItems/nut.tscn" id="14_xa3e2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_esldt"]
 texture = ExtResource("1_uidp5")
@@ -678,14 +684,32 @@ position = Vector2(80, -1)
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="sugar" parent="Node2D" instance=ExtResource("5_esldt")]
-position = Vector2(27, -21)
+[node name="apple" parent="Node2D" instance=ExtResource("7_u5kvw")]
+position = Vector2(-58, -54)
+
+[node name="banana" parent="Node2D" instance=ExtResource("11_mqefy")]
+position = Vector2(-20, -58)
+
+[node name="blueberry" parent="Node2D" instance=ExtResource("8_tmiqi")]
+position = Vector2(-37, -55)
+
+[node name="carrot" parent="Node2D" instance=ExtResource("9_licb0")]
+position = Vector2(-5, -57)
+
+[node name="egg" parent="Node2D" instance=ExtResource("10_duw1s")]
+position = Vector2(12, -57)
 
 [node name="flour" parent="Node2D" instance=ExtResource("6_3um3i")]
-position = Vector2(-21, -30)
+position = Vector2(30, -56)
 
-[node name="oat_milk" parent="Node2D" instance=ExtResource("4_dp7b8")]
-position = Vector2(203, -38)
+[node name="grape" parent="Node2D" instance=ExtResource("12_ro12e")]
+position = Vector2(48, -59)
+
+[node name="honey" parent="Node2D" instance=ExtResource("13_gpg4b")]
+position = Vector2(68, -61)
+
+[node name="nut" parent="Node2D" instance=ExtResource("14_xa3e2")]
+position = Vector2(89, -64)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://rxe8erek23el"]
+
+[ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_7q8qo"]
+[ext_resource type="Texture2D" uid="uid://dgi32l8q2vbsy" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Banana_Icon.png" id="2_fxtem"]
+
+[resource]
+script = ExtResource("1_7q8qo")
+name = "flour"
+texture = ExtResource("2_fxtem")
+metadata/_custom_type_script = "uid://dm2gjcygrbyo8"

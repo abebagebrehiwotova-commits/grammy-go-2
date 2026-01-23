@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://djo5og54aoh2x"]
+
+[ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_u2bfn"]
+[ext_resource type="Texture2D" uid="uid://bu82knjskwyw4" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Egg_Icon.png" id="2_7rneh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
+size = Vector2(9, 10)
+
+[node name="egg" type="Area2D"]
+script = ExtResource("1_u2bfn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.4999997, -1.9507976)
+scale = Vector2(0.025943398, 0.0259434)
+texture = ExtResource("2_7rneh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_h3fog")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

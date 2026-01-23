@@ -22,9 +22,20 @@ func set_up_area():
 	reset_grocery_items()
 
 var item_db := {
+	"apple":preload("res://Assets/inventory/InvRes/apple.tres"),
+	"banana": preload("res://Assets/inventory/InvRes/banana.tres"),
+	"blueberry":preload("res://Assets/inventory/InvRes/blueberry.tres"),
+	"carrot":preload("res://Assets/inventory/InvRes/carrot.tres"),
+	"egg": preload("res://Assets/inventory/InvRes/egg.tres"),
+	"flour": preload("res://Assets/inventory/InvRes/flour.tres"),
+	"grape": preload("res://Assets/inventory/InvRes/grape.tres"),
+	"honey": preload("res://Assets/inventory/InvRes/honey.tres"),
+	"nut": preload("res://Assets/inventory/InvRes/nut.tres"),
+	
 	"oat_milk": preload("res://Assets/inventory/InvRes/oat_milk.tres"),
 	"sugar": preload("res://Assets/inventory/InvRes/sugar.tres"),
-	"flour": preload("res://Assets/inventory/InvRes/flour.tres")}
+
+	}
 
 #hinzugefügt 17.01
 #Signal definieren für "emit_signal("inventory_changed")",in add_grocery_item.

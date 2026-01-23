@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://kn8n7pxouo4d"]
+
+[ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_m1tg8"]
+[ext_resource type="Texture2D" uid="uid://2k2vl020aa26" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Honey_Icon.png" id="2_xn1nc"]
+
+[resource]
+script = ExtResource("1_m1tg8")
+texture = ExtResource("2_xn1nc")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://2377j4s3sffc"]
+[gd_scene load_steps=4 format=3 uid="uid://pevaus8r6wko"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_eu2ah"]
 [ext_resource type="Texture2D" uid="uid://d4gf8pmu6n4bc" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Nut_Icon.png" id="2_mkkds"]

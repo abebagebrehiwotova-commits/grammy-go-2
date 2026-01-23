@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ofvmdyjexevj"]
+[gd_scene load_steps=4 format=3 uid="uid://blkvttcdxtd5r"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_yltr7"]
 [ext_resource type="Texture2D" uid="uid://2k2vl020aa26" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Honey_Icon.png" id="2_13ti5"]
