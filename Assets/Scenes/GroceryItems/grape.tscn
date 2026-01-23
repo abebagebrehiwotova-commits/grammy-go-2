@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm13clj0klc6a"]
+[gd_scene load_steps=4 format=3 uid="uid://sdnr1pey0743"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_44jy8"]
 [ext_resource type="Texture2D" uid="uid://cfm72o1tywq84" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Grape_Icon.png" id="2_wlm37"]
