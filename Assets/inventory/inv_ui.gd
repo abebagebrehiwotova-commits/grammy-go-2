@@ -10,13 +10,16 @@ var is_open = false
 
 #function to make sure  inventory is closed at the beginning of the game
 func _ready():
-	close()
+	open()
 	var gm = get_tree().get_first_node_in_group("game_manager")
 	if gm:
 		gm.inventory_changed.connect(update_slots)
 	update_slots()
 	
 func update_slots():
+	# 1. Alles leeren
+	for slot in slots:
+		slot.update(null)
 	for i in range(min(inv.items.size(),slots.size())):
 		slots[i].update(inv.items[i])
 

@@ -1794,31 +1794,31 @@ z_index = 100
 position = Vector2(9472, 2)
 
 [node name="apple" parent="Node2D" index="0"]
-position = Vector2(30, -36)
+position = Vector2(96, -63)
 
 [node name="banana" parent="Node2D" index="1"]
-position = Vector2(75, -65)
+position = Vector2(211, -51)
 
 [node name="blueberry" parent="Node2D" index="2"]
-position = Vector2(51, -52)
+position = Vector2(167, -26)
 
 [node name="carrot" parent="Node2D" index="3"]
-position = Vector2(103, -64)
+position = Vector2(261, -53)
 
 [node name="egg" parent="Node2D" index="4"]
-position = Vector2(129, -54)
+position = Vector2(352, -66)
 
 [node name="flour" parent="Node2D" index="5"]
-position = Vector2(162, -49)
+position = Vector2(399, -91)
 
 [node name="grape" parent="Node2D" index="6"]
-position = Vector2(195, -51)
+position = Vector2(470, -94)
 
 [node name="honey" parent="Node2D" index="7"]
-position = Vector2(223, -51)
+position = Vector2(523, -128)
 
 [node name="nut" parent="Node2D" index="8"]
-position = Vector2(254, -56)
+position = Vector2(577, -113)
 
 [node name="Inv_UI" parent="CanvasLayer" index="0"]
 offset_left = 80.0
