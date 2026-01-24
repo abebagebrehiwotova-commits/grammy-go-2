@@ -1790,7 +1790,8 @@ stream = ExtResource("6_7lgy5")
 volume_db = -16.0
 
 [node name="AreaExit" parent="." index="6"]
-position = Vector2(555, 95)
+z_index = 100
+position = Vector2(9472, 2)
 
 [node name="apple" parent="Node2D" index="0"]
 position = Vector2(30, -36)
