@@ -1899,7 +1899,6 @@ volume_db = -26.0
 
 [node name="sfx_steps" type="AudioStreamPlayer2D" parent="Player" index="4"]
 stream = ExtResource("10_pnluw")
-volume_db = 10.0
 
 [node name="sfx_pickup" type="AudioStreamPlayer2D" parent="Player" index="5"]
 stream = ExtResource("12_6rwvx")
