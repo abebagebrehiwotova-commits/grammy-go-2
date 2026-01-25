@@ -1786,8 +1786,8 @@ sources/3 = SubResource("TileSetAtlasSource_ttsc2")
 [node name="area_1" instance=ExtResource("1_uidp5")]
 
 [node name="Camera2D" type="Camera2D" parent="." index="0"]
-offset = Vector2(0, -75)
-zoom = Vector2(5.5, 5.5)
+offset = Vector2(0, -95)
+zoom = Vector2(2.5, 2.5)
 script = ExtResource("2_u1wc8")
 scroll_speed = 85.0
 

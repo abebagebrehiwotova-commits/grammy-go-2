@@ -20,6 +20,11 @@ config/icon="res://icon.svg"
 GameManager="*res://Assets/Scripts/game_Manager.gd"
 AudioStreamPlayer2d="*res://Assets/music/audio_stream_player_2d.tscn"
 
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [editor]
 
 movie_writer/movie_file="C:/Users/abeba/OneDrive/Dokumente/grammy-go-2/Assets/recordings/movie Grammy-go-2.avi"
