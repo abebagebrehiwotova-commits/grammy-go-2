@@ -9,7 +9,6 @@ class_name PlayerController
 @onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
 @onready var step_timer: Timer = $StepTimer
 @onready var sfx_steps: AudioStreamPlayer2D = $sfx_steps
-@onready var sfx_shoppingcart: AudioStreamPlayer2D = $sfx_shoppingcart
 
 
 #inventory-Dinge
@@ -61,6 +60,8 @@ func _physics_process(delta: float) -> void:
 			
 	else:
 		velocity.x = move_toward(velocity.x, 0,speed * speed_multiplier)
+		sfx_steps.play()
 
 	move_and_slide()
+
 	

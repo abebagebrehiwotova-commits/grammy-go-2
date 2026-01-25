@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://ck2axyfa1g2sw"]
+[gd_scene load_steps=21 format=3 uid="uid://ck2axyfa1g2sw"]
 
 [ext_resource type="PackedScene" uid="uid://gl40wgl101uw" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
 [ext_resource type="AudioStream" uid="uid://h1nj1rwyd3us" path="res://Assets/music/background music.wav" id="2_3uyhe"]
@@ -9,9 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://clsybb3hntw0u" path="res://Assets/Sprites/OtherAssets/16x16/Interiors_free_16x16.png" id="4_f20k6"]
 [ext_resource type="Texture2D" uid="uid://d080am2k3eupn" path="res://Assets/Sprites/Supermarkt_Background_Final_Regal.png" id="4_pnluw"]
 [ext_resource type="Texture2D" uid="uid://cjy55l5hv4g7o" path="res://Assets/Sprites/OtherAssets/16x16/Room_Builder_free_16x16.png" id="5_0ufq0"]
-[ext_resource type="AudioStream" uid="uid://bhxbjj75s663s" path="res://Assets/music/footsteps2.wav" id="5_u1wc8"]
-[ext_resource type="AudioStream" uid="uid://cbmdfcnknjytg" path="res://Assets/music/shopping cart.wav" id="6_7lgy5"]
 [ext_resource type="Texture2D" uid="uid://bp7xuwiurly4" path="res://Assets/Sprites/tiles_boxen_neu.png" id="7_7lgy5"]
+[ext_resource type="AudioStream" uid="uid://wjcwf31udw11" path="res://Assets/music/footsteps long final.wav" id="10_pnluw"]
 [ext_resource type="AudioStream" uid="uid://xrmwukctyhma" path="res://Assets/music/item pickup good.wav" id="12_6rwvx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1wc8"]
@@ -1899,13 +1898,10 @@ stream = ExtResource("4_0ufq0")
 volume_db = -26.0
 
 [node name="sfx_steps" type="AudioStreamPlayer2D" parent="Player" index="4"]
-stream = ExtResource("5_u1wc8")
+stream = ExtResource("10_pnluw")
+volume_db = 10.0
 
-[node name="sfx_shoppingcart" type="AudioStreamPlayer2D" parent="Player" index="5"]
-stream = ExtResource("6_7lgy5")
-volume_db = -16.0
-
-[node name="sfx_pickup" type="AudioStreamPlayer2D" parent="Player" index="6"]
+[node name="sfx_pickup" type="AudioStreamPlayer2D" parent="Player" index="5"]
 stream = ExtResource("12_6rwvx")
 volume_db = -10.0
 
