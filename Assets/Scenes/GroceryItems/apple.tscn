@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://im8u0p0jdjw5"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_5w8u4"]
-[ext_resource type="Texture2D" uid="uid://4b3t2qtragsl" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Apple_Icon.png" id="2_ogiej"]
+[ext_resource type="Texture2D" uid="uid://dpsucrl7jeerc" path="res://Assets/Sprites/ApfelIcon.png" id="2_5w8u4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
 size = Vector2(12, 14)
@@ -11,8 +11,8 @@ script = ExtResource("1_5w8u4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.9292448, -3.154644)
-scale = Vector2(0.03152639, 0.030645922)
-texture = ExtResource("2_ogiej")
+scale = Vector2(0.012, 0.011)
+texture = ExtResource("2_5w8u4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, -3)

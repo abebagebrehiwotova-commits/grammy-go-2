@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2odldka7f5q"]
+[gd_scene load_steps=4 format=3 uid="uid://cx344plqxyrj7"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_rquql"]
-[ext_resource type="Texture2D" uid="uid://blapgb1ab01qp" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Carrot_Icon.png" id="2_pabt2"]
+[ext_resource type="Texture2D" uid="uid://twy6gclur4ly" path="res://Assets/Sprites/KarotteIcon.png" id="2_rquql"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
 size = Vector2(13, 16)
@@ -11,8 +11,8 @@ script = ExtResource("1_rquql")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-3.874302e-07, -0.65795547)
-scale = Vector2(0.03515625, 0.036358755)
-texture = ExtResource("2_pabt2")
+scale = Vector2(0.012, 0.013)
+texture = ExtResource("2_rquql")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -1)

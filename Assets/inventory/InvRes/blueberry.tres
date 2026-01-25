@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://dipf0d5vw10pm"]
 
 [ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_r3p1l"]
-[ext_resource type="Texture2D" uid="uid://dehsq375lwdt7" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Blueberry_Icon.png" id="2_rhr7x"]
+[ext_resource type="Texture2D" uid="uid://8ffyq8m07jb" path="res://Assets/Sprites/BeereIcon.png" id="2_i1l22"]
 
 [resource]
 script = ExtResource("1_r3p1l")
-texture = ExtResource("2_rhr7x")
+texture = ExtResource("2_i1l22")

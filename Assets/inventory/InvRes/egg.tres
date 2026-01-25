@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://c1ho0josjpo71"]
 
 [ext_resource type="Script" uid="uid://dm2gjcygrbyo8" path="res://Assets/inventory/inventory_item.gd" id="1_qyacn"]
-[ext_resource type="Texture2D" uid="uid://bu82knjskwyw4" path="res://Assets/Sprites/OtherAssets/premadeassets/ItemFoodIcons/Egg_Icon.png" id="2_0n1lo"]
+[ext_resource type="Texture2D" uid="uid://b1hrj4a6cuaew" path="res://Assets/Sprites/EiCon.png" id="2_qyacn"]
 
 [resource]
 script = ExtResource("1_qyacn")
-texture = ExtResource("2_0n1lo")
+texture = ExtResource("2_qyacn")

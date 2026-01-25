@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dueyfabxutu8m"]
 
 [ext_resource type="Script" uid="uid://beq8w7reqqcm6" path="res://Assets/Scripts/grocery_items.gd" id="1_wjs2c"]
-[ext_resource type="Texture2D" uid="uid://bsrun3s0ua0k7" path="res://Assets/Sprites/SpriteSheet4.png" id="2_wjs2c"]
+[ext_resource type="Texture2D" uid="uid://dbog5vsrnvnri" path="res://Assets/Sprites/FlourIcon.png" id="2_wjs2c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3fog"]
 size = Vector2(9, 10)
@@ -11,7 +11,7 @@ script = ExtResource("1_wjs2c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-0.4999997, -1.9507976)
-scale = Vector2(0.025943398, 0.0259434)
+scale = Vector2(0.012, 0.012)
 texture = ExtResource("2_wjs2c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

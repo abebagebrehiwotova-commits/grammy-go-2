@@ -1878,7 +1878,7 @@ position = Vector2(17255.941, -1.7044678)
 texture = ExtResource("4_pnluw")
 
 [node name="SupermarktBackgroundFinalRegal9" type="Sprite2D" parent="SupermarktBackgroundFinal/SupermarktBackgroundFinal/SupermarktBackgroundFinal/SupermarktBackgroundFinal/SupermarktBackgroundFinal/SupermarktBackgroundFinal/SupermarktBackgroundFinal/SupermarktBackgroundFinal" index="9"]
-position = Vector2(19180.09, -1.7044373)
+position = Vector2(19180.592, -1.7044158)
 scale = Vector2(1.0064372, 1)
 texture = ExtResource("4_pnluw")
 
@@ -1906,14 +1906,14 @@ volume_db = -16.0
 
 [node name="AreaExit" parent="." index="6"]
 z_index = 100
-position = Vector2(9560, 2)
+position = Vector2(9368, -32)
 
 [node name="apple" parent="Node2D" index="0"]
-position = Vector2(580, -96)
+position = Vector2(494, -89)
 scale = Vector2(1.5, 1.5)
 
 [node name="banana" parent="Node2D" index="1"]
-position = Vector2(1290, -86)
+position = Vector2(1308, -110)
 scale = Vector2(1.5, 1.5)
 
 [node name="blueberry" parent="Node2D" index="2"]

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dueyfabxutu8m" path="res://Assets/Scenes/GroceryItems/flour.tscn" id="6_3um3i"]
 [ext_resource type="PackedScene" uid="uid://im8u0p0jdjw5" path="res://Assets/Scenes/GroceryItems/apple.tscn" id="7_u5kvw"]
 [ext_resource type="PackedScene" uid="uid://dfdpq30ps75s1" path="res://Assets/Scenes/GroceryItems/blueberry.tscn" id="8_tmiqi"]
-[ext_resource type="PackedScene" path="res://Assets/Scenes/GroceryItems/carrot.tscn" id="9_licb0"]
+[ext_resource type="PackedScene" uid="uid://cx344plqxyrj7" path="res://Assets/Scenes/GroceryItems/carrot.tscn" id="9_licb0"]
 [ext_resource type="PackedScene" uid="uid://djo5og54aoh2x" path="res://Assets/Scenes/GroceryItems/egg.tscn" id="10_duw1s"]
 [ext_resource type="PackedScene" uid="uid://ci6hbghdfnhjn" path="res://Assets/Scenes/GroceryItems/banana.tscn" id="11_mqefy"]
 [ext_resource type="PackedScene" uid="uid://bm13clj0klc6a" path="res://Assets/Scenes/GroceryItems/grape.tscn" id="12_ro12e"]
@@ -670,6 +670,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_esldt")
 
 [node name="AreaTemplate" type="Node2D"]
+position = Vector2(12, -7)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_8wi1m")
@@ -688,10 +689,10 @@ position = Vector2(80, -1)
 position = Vector2(-58, -54)
 
 [node name="banana" parent="Node2D" instance=ExtResource("11_mqefy")]
-position = Vector2(-20, -58)
+position = Vector2(-38, -56)
 
 [node name="blueberry" parent="Node2D" instance=ExtResource("8_tmiqi")]
-position = Vector2(-37, -55)
+position = Vector2(-17, -59)
 
 [node name="carrot" parent="Node2D" instance=ExtResource("9_licb0")]
 position = Vector2(-5, -57)
